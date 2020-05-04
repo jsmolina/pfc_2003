@@ -1,0 +1,704 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Modern) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 10, 3\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\tmpConfigDriver.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.esp\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\tmpConfigDriver.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\icon2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ConfigDriver..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ConfigDriver 1.0 (c) 2002-03",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "-Programmer: \nJordi Sesmero Molina",IDC_STATIC,40,25,
+                    119,17
+    DEFPUSHBUTTON   "Aceptar",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "All SpaceMouse, SpaceBall models specified here are property of SpaceTec (R) Corporation. www.3dconnexion.com",
+                    IDC_STATIC,8,88,214,16
+    LTEXT           "- Project Director:\nDaniel Soto Álvarez\n-University:\nUniversitat Pompeu Fabra, Barcelona",
+                    IDC_STATIC,40,46,119,32
+END
+
+IDD_TMPCONFIGDRIVER_DIALOG DIALOGEX 0, 0, 346, 223
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Driver Configuration"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Close",IDCANCEL,227,200,50,14
+    EDITTEXT        IDC_EDIT1,3,3,253,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,3,18,336,174
+    CONTROL         "Top",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    310,4,30,9
+    DEFPUSHBUTTON   "&Apply",IDOK2,286,200,50,14
+    PUSHBUTTON      "About...",IDC_BUTTON2,8,200,50,14
+    PUSHBUTTON      "Clear Log",IDC_BUTTON32,261,3,39,9,BS_FLAT
+END
+
+IDD_TAB1 DIALOG DISCARDABLE  0, 0, 281, 156
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Internal BIOS String",IDC_STATIC,5,9,90,10
+    EDITTEXT        IDC_T11,3,20,267,15,ES_AUTOHSCROLL
+    COMBOBOX        IDC_T12,12,60,132,70,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Major Version",IDC_STATIC,12,105,45,8
+    LTEXT           "Minor Version",IDC_STATIC,97,105,45,8
+    EDITTEXT        IDC_T13,13,114,44,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_T14,99,114,44,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Axis",IDC_STATIC,167,49,20,10
+    LTEXT           "Buttons",IDC_STATIC,217,49,45,10
+    EDITTEXT        IDC_T15,167,59,30,15,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_T16,217,59,35,15,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,197,59,
+                    11,15
+    CONTROL         "Spin2",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,252,59,
+                    11,15
+    GROUPBOX        "Model Characteristics",IDC_STATIC,160,39,111,60
+    CONTROL         "Can Beep?",IDC_T17,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,169,84,96,9
+    PUSHBUTTON      "Set Defaults",IDC_BDEFAULTS,201,141,69,12,BS_FLAT
+    EDITTEXT        IDC_T18,13,84,132,12,ES_AUTOHSCROLL
+    LTEXT           "Model String",IDC_STATIC,12,75,66,8
+    EDITTEXT        IDC_T19,174,120,27,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_T20,225,120,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Model Information",IDC_STATIC,3,39,153,99
+    GROUPBOX        "Library Version",IDC_STATIC,159,102,111,36
+    LTEXT           "Model",IDC_STATIC,12,51,30,8
+    LTEXT           "Major                 Minor",IDC_STATIC,174,111,72,9
+END
+
+IDD_TAB2 DIALOG DISCARDABLE  0, 0, 317, 158
+STYLE WS_CHILD | WS_VSCROLL | WS_HSCROLL
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "SP Axis",IDC_STATIC,9,9,40,8
+    LTEXT           "DI Device",IDC_STATIC,81,9,45,10
+    LTEXT           "DI Axis",IDC_STATIC,234,9,40,8
+    LTEXT           "TX",IDC_STATIC,9,21,18,9
+    LTEXT           "TY",IDC_STATIC,9,42,18,9
+    LTEXT           "TZ",IDC_STATIC,9,60,18,9
+    LTEXT           "RX",IDC_STATIC,9,81,18,9
+    LTEXT           "RY",IDC_STATIC,9,102,18,9
+    LTEXT           "RZ",IDC_STATIC,9,126,18,9
+    COMBOBOX        IDC_T28,81,21,75,97,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T29,81,41,75,98,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T210,81,61,75,84,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T212,81,101,75,74,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T213,81,121,75,69,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T214,234,21,60,74,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T215,234,41,60,75,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T216,234,61,60,73,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T217,234,81,60,62,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T218,234,101,60,48,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T219,234,121,60,46,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_2RX,81,81,75,84,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_TAB3 DIALOG DISCARDABLE  0, 0, 323, 158
+STYLE WS_CHILD | WS_VSCROLL | WS_HSCROLL
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "SP Buttons",IDC_STATIC,9,9,40,8
+    LTEXT           "DI Device",IDC_STATIC,81,9,45,8
+    LTEXT           "DI Buttons",IDC_STATIC,234,9,40,8
+    LTEXT           "1",IDC_STATIC,15,21,18,9
+    LTEXT           "2",IDC_STATIC,15,42,18,9
+    LTEXT           "3",IDC_STATIC,15,60,18,9
+    LTEXT           "4",IDC_STATIC,15,81,18,9
+    LTEXT           "5",IDC_STATIC,15,102,18,9
+    LTEXT           "6",IDC_STATIC,15,126,18,9
+    COMBOBOX        IDC_T301,81,21,75,75,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T302,81,41,75,73,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T303,81,61,75,74,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T304,81,81,75,69,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T305,81,101,75,61,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T306,81,121,75,65,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T313,234,21,60,75,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T314,234,41,60,73,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T315,234,61,60,71,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T316,234,81,60,78,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T317,234,101,60,67,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T318,234,121,60,62,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_TAB4 DIALOG DISCARDABLE  0, 0, 323, 158
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Global Sensitivity",IDC_STATIC,6,6,153,40
+    CONTROL         "Slider1",IDC_T41,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,9,15,144,17
+    LTEXT           "0",IDC_STATIC,15,33,9,8
+    LTEXT           "100",IDC_STATIC,135,33,15,9
+    GROUPBOX        "Advanced Sensitivity",IDC_STATIC,6,49,153,101
+    GROUPBOX        "Individual axis filters",IDC_STATIC,165,9,126,141
+    CONTROL         "Filter dominant axis ",IDC_T45,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,177,22,102,12
+    CONTROL         "Exchange Y and Z",IDC_T46,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,177,36,99,12
+    GROUPBOX        "Translations",IDC_STATIC,168,52,120,36
+    CONTROL         "Translation Enabled",IDC_T47,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,178,63,99,9
+    CONTROL         "TX",IDC_T48,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,178,
+                    76,24,8
+    CONTROL         "TY",IDC_T49,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,215,
+                    76,24,9
+    CONTROL         "TZ",IDC_T410,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,252,
+                    76,24,9
+    GROUPBOX        "Rotacions",IDC_STATIC,168,90,120,40
+    CONTROL         "No Sound",IDC_T415,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,177,135,102,9
+    CONTROL         "Rotation Enabled",IDC_T411,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,177,103,99,9
+    CONTROL         "RX",IDC_T412,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,177,
+                    119,24,9
+    CONTROL         "RY",IDC_T413,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,216,
+                    119,24,9
+    CONTROL         "RZ",IDC_T414,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,252,
+                    119,24,9
+    CONTROL         "Slider1",IDC_T42,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,9,60,141,17
+    CONTROL         "Slider1",IDC_T43,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,9,90,141,17
+    CONTROL         "Slider1",IDC_T44,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_TABSTOP,9,118,141,17
+    CTEXT           "Panning",IDC_STATIC,15,78,135,9
+    CTEXT           "Rotations",IDC_STATIC,12,108,138,9
+    CTEXT           "Zomming",IDC_STATIC,12,135,138,9
+END
+
+IDD_TAB5 DIALOGEX 0, 0, 320, 151
+STYLE DS_SETFOREGROUND | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Emulated Device Status",IDC_STATIC,87,3,81,8
+    LTEXT           "DirectInput Info",IDC_STATIC,0,3,54,8
+    EDITTEXT        IDC_T54,81,12,99,108,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    EDITTEXT        IDC_T55,0,12,78,108,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_WANTRETURN,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_T56,186,12,129,108,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "Program LOG",IDC_STATIC,186,3,48,8
+    CONTROL         "Activate On Screen Loging",IDC_LOGING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,106,129,108,9
+    COMBOBOX        IDC_HDEV10,6,126,63,54,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_TAB6 DIALOG DISCARDABLE  0, 0, 317, 158
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Eix",IDC_STATIC,15,9,15,8
+    LTEXT           "SpaceWare Button to do this",IDC_STATIC,81,9,93,8
+    LTEXT           "Final Axis",IDC_STATIC,234,9,51,8
+    LTEXT           "TX",IDC_STATIC,15,21,18,9
+    LTEXT           "TY",IDC_STATIC,15,42,18,9
+    LTEXT           "TZ",IDC_STATIC,15,63,18,9
+    LTEXT           "RX",IDC_STATIC,15,84,18,9
+    LTEXT           "RY",IDC_STATIC,15,105,18,9
+    LTEXT           "RZ",IDC_STATIC,15,126,18,9
+    COMBOBOX        IDC_67,234,21,60,120,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_68,234,41,60,115,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_69,234,61,60,113,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_610,234,81,60,99,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_611,234,101,60,109,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_612,234,121,60,89,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T61,81,21,75,117,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T62,81,41,75,120,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T64,81,81,75,105,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T65,81,101,75,118,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_T66,81,121,75,84,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_TZ63,81,63,75,108,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0C0A04B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Aplicación MFC tmpConfigDriver\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "tmpConfigDriver\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "tmpConfigDriver.EXE\0"
+            VALUE "ProductName", "Aplicación tmpConfigDriver\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xc0a, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_TMPCONFIGDRIVER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 339
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+
+    IDD_TAB1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_TAB2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 289
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_TAB3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 299
+        TOPMARGIN, 7
+    END
+
+    IDD_TAB4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 316
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_TAB5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_TAB6, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TAB1 DLGINIT
+BEGIN
+    IDC_T12, 0x403, 15, 0
+0x5053, 0x4341, 0x4245, 0x4c41, 0x204c, 0x3032, 0x3330, "\000" 
+    IDC_T12, 0x403, 15, 0
+0x5053, 0x4341, 0x4245, 0x4c41, 0x204c, 0x3033, 0x3330, "\000" 
+    IDC_T12, 0x403, 17, 0
+0x5053, 0x4341, 0x2045, 0x4f43, 0x544e, 0x4f52, 0x4c4c, 0x5245, "\000" 
+    IDC_T12, 0x403, 8, 0
+0x5641, 0x4e45, 0x4547, 0x0052, 
+    IDC_T12, 0x403, 13, 0
+0x5053, 0x4341, 0x4f45, 0x4252, 0x3320, 0x3036, "\000" 
+    IDC_T12, 0x403, 10, 0
+0x414e, 0x4956, 0x4147, 0x4f54, 0x0052, 
+    IDC_T12, 0x403, 16, 0
+0x5053, 0x4341, 0x4245, 0x4c41, 0x204c, 0x3032, 0x3330, 0x0041, 
+    IDC_T12, 0x403, 16, 0
+0x5053, 0x4341, 0x4245, 0x4c41, 0x204c, 0x3032, 0x3330, 0x0042, 
+    IDC_T12, 0x403, 16, 0
+0x5053, 0x4341, 0x4245, 0x4c41, 0x204c, 0x3032, 0x3330, 0x0043, 
+    IDC_T12, 0x403, 16, 0
+0x5053, 0x4341, 0x4245, 0x4c41, 0x204c, 0x3033, 0x3330, 0x0041, 
+    IDC_T12, 0x403, 16, 0
+0x5053, 0x4341, 0x4245, 0x4c41, 0x204c, 0x3033, 0x3330, 0x0042, 
+    IDC_T12, 0x403, 16, 0
+0x5053, 0x4341, 0x4245, 0x4c41, 0x204c, 0x3033, 0x3330, 0x0043, 
+    IDC_T12, 0x403, 15, 0
+0x5053, 0x4341, 0x4245, 0x4c41, 0x204c, 0x3034, 0x3030, "\000" 
+    IDC_T12, 0x403, 19, 0
+0x5053, 0x4341, 0x4d45, 0x554f, 0x4553, 0x4320, 0x414c, 0x5353, 0x4349, 
+"\000" 
+    IDC_T12, 0x403, 16, 0
+0x5053, 0x4341, 0x4d45, 0x554f, 0x4553, 0x5020, 0x554c, 0x0053, 
+    IDC_T12, 0x403, 14, 0
+0x5053, 0x4341, 0x4d45, 0x554f, 0x4553, 0x5820, 0x0054, 
+    IDC_T12, 0x403, 8, 0
+0x5550, 0x4b43, 0x414d, 0x004e, 
+    IDC_T12, 0x403, 7, 0
+0x4143, 0x4d44, 0x4e41, "\000" 
+    IDC_T12, 0x403, 26, 0
+0x6441, 0x6176, 0x636e, 0x6465, 0x4320, 0x6e6f, 0x6966, 0x7567, 0x6172, 
+0x6974, 0x6e6f, 0x2e2e, 0x002e, 
+    0
+END
+
+IDD_TAB6 DLGINIT
+BEGIN
+    IDC_67, 0x403, 7, 0
+0x6e28, 0x6e6f, 0x2965, "\000" 
+    IDC_67, 0x403, 3, 0
+0x5854, "\000" 
+    IDC_67, 0x403, 3, 0
+0x5954, "\000" 
+    IDC_67, 0x403, 3, 0
+0x5a54, "\000" 
+    IDC_67, 0x403, 3, 0
+0x5852, "\000" 
+    IDC_67, 0x403, 3, 0
+0x5952, "\000" 
+    IDC_67, 0x403, 3, 0
+0x5a52, "\000" 
+    IDC_68, 0x403, 7, 0
+0x6e28, 0x6e6f, 0x2965, "\000" 
+    IDC_68, 0x403, 3, 0
+0x5854, "\000" 
+    IDC_68, 0x403, 3, 0
+0x5954, "\000" 
+    IDC_68, 0x403, 3, 0
+0x5a54, "\000" 
+    IDC_68, 0x403, 3, 0
+0x5852, "\000" 
+    IDC_68, 0x403, 3, 0
+0x5952, "\000" 
+    IDC_68, 0x403, 3, 0
+0x5a52, "\000" 
+    IDC_69, 0x403, 7, 0
+0x6e28, 0x6e6f, 0x2965, "\000" 
+    IDC_69, 0x403, 3, 0
+0x5854, "\000" 
+    IDC_69, 0x403, 3, 0
+0x5954, "\000" 
+    IDC_69, 0x403, 3, 0
+0x5a54, "\000" 
+    IDC_69, 0x403, 3, 0
+0x5852, "\000" 
+    IDC_69, 0x403, 3, 0
+0x5952, "\000" 
+    IDC_69, 0x403, 3, 0
+0x5a52, "\000" 
+    IDC_610, 0x403, 7, 0
+0x6e28, 0x6e6f, 0x2965, "\000" 
+    IDC_610, 0x403, 3, 0
+0x5854, "\000" 
+    IDC_610, 0x403, 3, 0
+0x5954, "\000" 
+    IDC_610, 0x403, 3, 0
+0x5a54, "\000" 
+    IDC_610, 0x403, 3, 0
+0x5852, "\000" 
+    IDC_610, 0x403, 3, 0
+0x5952, "\000" 
+    IDC_610, 0x403, 3, 0
+0x5a52, "\000" 
+    IDC_611, 0x403, 7, 0
+0x6e28, 0x6e6f, 0x2965, "\000" 
+    IDC_611, 0x403, 3, 0
+0x5854, "\000" 
+    IDC_611, 0x403, 3, 0
+0x5954, "\000" 
+    IDC_611, 0x403, 3, 0
+0x5a54, "\000" 
+    IDC_611, 0x403, 3, 0
+0x5852, "\000" 
+    IDC_611, 0x403, 3, 0
+0x5952, "\000" 
+    IDC_611, 0x403, 3, 0
+0x5a52, "\000" 
+    IDC_612, 0x403, 7, 0
+0x6e28, 0x6e6f, 0x2965, "\000" 
+    IDC_612, 0x403, 3, 0
+0x5854, "\000" 
+    IDC_612, 0x403, 3, 0
+0x5954, "\000" 
+    IDC_612, 0x403, 3, 0
+0x5a54, "\000" 
+    IDC_612, 0x403, 3, 0
+0x5852, "\000" 
+    IDC_612, 0x403, 3, 0
+0x5952, "\000" 
+    IDC_612, 0x403, 3, 0
+0x5a52, "\000" 
+    IDC_T61, 0x403, 7, 0
+0x6e28, 0x6e6f, 0x2965, "\000" 
+    IDC_T61, 0x403, 2, 0
+0x0031, 
+    IDC_T61, 0x403, 2, 0
+0x0032, 
+    IDC_T61, 0x403, 2, 0
+0x0033, 
+    IDC_T61, 0x403, 2, 0
+0x0034, 
+    IDC_T61, 0x403, 2, 0
+0x0035, 
+    IDC_T61, 0x403, 2, 0
+0x0036, 
+    IDC_T62, 0x403, 7, 0
+0x6e28, 0x6e6f, 0x2965, "\000" 
+    IDC_T62, 0x403, 2, 0
+0x0031, 
+    IDC_T62, 0x403, 2, 0
+0x0032, 
+    IDC_T62, 0x403, 2, 0
+0x0033, 
+    IDC_T62, 0x403, 2, 0
+0x0034, 
+    IDC_T62, 0x403, 2, 0
+0x0035, 
+    IDC_T62, 0x403, 2, 0
+0x0036, 
+    IDC_T64, 0x403, 7, 0
+0x6e28, 0x6e6f, 0x2965, "\000" 
+    IDC_T64, 0x403, 2, 0
+0x0031, 
+    IDC_T64, 0x403, 2, 0
+0x0032, 
+    IDC_T64, 0x403, 2, 0
+0x0033, 
+    IDC_T64, 0x403, 2, 0
+0x0034, 
+    IDC_T64, 0x403, 2, 0
+0x0035, 
+    IDC_T64, 0x403, 2, 0
+0x0036, 
+    IDC_T65, 0x403, 7, 0
+0x6e28, 0x6e6f, 0x2965, "\000" 
+    IDC_T65, 0x403, 2, 0
+0x0031, 
+    IDC_T65, 0x403, 2, 0
+0x0032, 
+    IDC_T65, 0x403, 2, 0
+0x0033, 
+    IDC_T65, 0x403, 2, 0
+0x0034, 
+    IDC_T65, 0x403, 2, 0
+0x0035, 
+    IDC_T65, 0x403, 2, 0
+0x0036, 
+    IDC_T66, 0x403, 7, 0
+0x6e28, 0x6e6f, 0x2965, "\000" 
+    IDC_T66, 0x403, 2, 0
+0x0031, 
+    IDC_T66, 0x403, 2, 0
+0x0032, 
+    IDC_T66, 0x403, 2, 0
+0x0033, 
+    IDC_T66, 0x403, 2, 0
+0x0034, 
+    IDC_T66, 0x403, 2, 0
+0x0035, 
+    IDC_T66, 0x403, 2, 0
+0x0036, 
+    IDC_TZ63, 0x403, 7, 0
+0x6e28, 0x6e6f, 0x2965, "\000" 
+    IDC_TZ63, 0x403, 2, 0
+0x0031, 
+    IDC_TZ63, 0x403, 2, 0
+0x0032, 
+    IDC_TZ63, 0x403, 2, 0
+0x0033, 
+    IDC_TZ63, 0x403, 2, 0
+0x0034, 
+    IDC_TZ63, 0x403, 2, 0
+0x0035, 
+    IDC_TZ63, 0x403, 2, 0
+0x0036, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&Acerca de ConfigDriver..."
+END
+
+#endif    // Spanish (Modern) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)
+#ifdef _WIN32
+LANGUAGE 10, 3
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\tmpConfigDriver.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.esp\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

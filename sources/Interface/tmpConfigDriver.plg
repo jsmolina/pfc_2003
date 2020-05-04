@@ -1,0 +1,113 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: tmpConfigDriver - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0xc0a /fo"Debug/tmpConfigDriver.res" /d "_DEBUG" /d "_AFXDLL" "C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\tmpConfigDriver.rc"" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP334.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I ".\head" /I "C:\Archivos de programa\3Dconnexion\3DxWare SDK\inc" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/tmpConfigDriver.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\head\AsignBotons.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\head\AsignEixos.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\head\AsignEspecials.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\head\Boto.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\head\CBDades.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\head\CConfiguration.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\head\DirectInput\CDInputJoystick.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\head\DirectInput\CDInputMouse.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\head\DirectInput\CDirectInput.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\head\CFilterDI.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\head\CurrentStatus.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\head\DirectInput\dinput_f.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\head\Eix.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\head\Event.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\head\Handle.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\Tab1.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\Tab2.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\Tab3.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\Tab4.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\Tab5.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\Tab6.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\tmpConfigDriver.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\tmpConfigDriverDlg.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\head\Window_Handles.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP334.tmp" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP335.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I ".\head" /I "C:\Archivos de programa\3Dconnexion\3DxWare SDK\inc" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/tmpConfigDriver.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\Interface\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP335.tmp" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP336.tmp" with contents
+[
+wrapper.lib dinput8.lib dxguid.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/ConfigDriver.pdb" /debug /machine:I386 /out:"./Debug/ConfigDriver.exe" /pdbtype:sept 
+.\Debug\AsignBotons.obj
+.\Debug\AsignEixos.obj
+.\Debug\AsignEspecials.obj
+.\Debug\Boto.obj
+.\Debug\CBDades.obj
+.\Debug\CConfiguration.obj
+.\Debug\CDInputJoystick.obj
+.\Debug\CDInputMouse.obj
+.\Debug\CDirectInput.obj
+.\Debug\CFilterDI.obj
+.\Debug\CurrentStatus.obj
+.\Debug\dinput_f.obj
+.\Debug\Eix.obj
+.\Debug\Event.obj
+.\Debug\Handle.obj
+.\Debug\StdAfx.obj
+.\Debug\Tab1.obj
+.\Debug\Tab2.obj
+.\Debug\Tab3.obj
+.\Debug\Tab4.obj
+.\Debug\Tab5.obj
+.\Debug\Tab6.obj
+.\Debug\tmpConfigDriver.obj
+.\Debug\tmpConfigDriverDlg.obj
+.\Debug\Window_Handles.obj
+.\Debug\tmpConfigDriver.res
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP336.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AsignBotons.cpp
+AsignEixos.cpp
+AsignEspecials.cpp
+Boto.cpp
+CBDades.cpp
+CConfiguration.cpp
+CDInputJoystick.cpp
+CDInputMouse.cpp
+CDirectInput.cpp
+CFilterDI.cpp
+CurrentStatus.cpp
+dinput_f.cpp
+Eix.cpp
+Event.cpp
+Handle.cpp
+Tab1.cpp
+Tab2.cpp
+Tab3.cpp
+Tab4.cpp
+Tab5.cpp
+Tab6.cpp
+tmpConfigDriver.cpp
+tmpConfigDriverDlg.cpp
+Window_Handles.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+ConfigDriver.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

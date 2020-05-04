@@ -1,0 +1,45 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: wrapper - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0xc0a /fo"Debug/Script1.res" /d "_DEBUG" "C:\Jsm\Carrera\TfiCarrera\Esquelet\wrapper\Script1.rc"" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP337.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "C:\Archivos de programa\3Dconnexion\3DxWare SDK\inc" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "WRAPPER_EXPORTS" /FR"Debug/" /Fp"Debug/wrapper.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\wrapper\StdAfx.cpp"
+"C:\Jsm\Carrera\TfiCarrera\Esquelet\wrapper\wrapper.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP337.tmp" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP338.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib winmm.lib /nologo /dll /incremental:yes /pdb:"Debug/wrapper.pdb" /debug /machine:I386 /out:"Debug/wrapper.dll" /implib:"Debug/wrapper.lib" /pdbtype:sept 
+.\Debug\StdAfx.obj
+.\Debug\wrapper.obj
+.\Debug\Script1.res
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP338.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+wrapper.cpp
+Compilant la lliberia wrapper...
+Compiling c:\jsm\carrera\tficarrera\esquelet\wrapper\wrapper.h
+Last modified on Sun Jun 15 14:50:00 2003
+Linking...
+   Creating library Debug/wrapper.lib and object Debug/wrapper.exp
+Creating command line "bscmake.exe /nologo /o"Debug/wrapper.bsc"  .\Debug\StdAfx.sbr .\Debug\wrapper.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+wrapper.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

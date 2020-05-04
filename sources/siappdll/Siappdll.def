@@ -1,0 +1,29 @@
+LIBRARY Siappdll
+DESCRIPTION DLL FOR 3dWARE
+
+EXPORTS		
+		SiInitialize			@16		
+		SiTerminate				@23
+		SiGetNumDevices			@14
+		SiGetDeviceID			@7
+		SiDeviceIndex			@5
+		SiDispatch				@6
+		SiOpenWinInit			@19
+		SiOpen					@18
+		SiClose					@4		
+		SiIsSpaceWareEvent		@17
+		SiGetEventWinInit		@12
+		SiGetEvent				@11
+		SiBeep					@1
+		SiRezero				@21
+		SiGrabDevice			@15
+		SiReleaseDevice			@20
+		SiButtonPressed			@2
+		SiButtonReleased		@3
+		SiSetUiMode				@22		
+		SiGetDevicePort			@9
+		SiGetDriverInfo			@10
+		SiGetLibraryInfo		@13
+		SiGetDeviceInfo			@8
+		SpwErrorString			@24
+		SpwErrorVal				@25
